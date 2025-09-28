@@ -1,0 +1,25 @@
+{{ $showProjectLogo := .Get "show-project-logo" | default "false" }}
+{{ $projectsTitle := .Get "projects-title" | default "Projects" }}
+
+<section class="hero">
+  <div class="hero-content">
+    {{ .Inner | markdownify }}
+  </div>
+
+  {{ if eq $showProjectLogo "true" }}
+  <div class="hero-projects">
+    <h2>{{ $projectsTitle }}</h2>
+    <div class="project_logos">
+      {{ range .Site.Sections }}
+        {{ range first 12 (.Data.Pages.ByDate.Reverse) }}
+          {{ if .Params.project_logo }}
+          <div class="project_logo">
+            <img src="{{ .Params.project_logo }}" alt="{{ .Title }} logo">
+          </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</section>

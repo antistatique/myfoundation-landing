@@ -1,0 +1,40 @@
+<div class="project_list">
+{{ range .Site.Sections }}
+	{{ range first 12 (.Data.Pages.ByDate.Reverse) }}
+	<a href="{{.Permalink}}">
+		<div class="project_item">
+			{{ if .Params.project_logo }}
+			<div class="project_logo">
+				<img src="{{ .Params.project_logo }}" alt="{{ .Title }} logo">
+			</div>
+			{{ end }}
+			<div class="project_content">
+				<div class="project_list_title">
+					<h4>{{ .Title }}</h4>
+				</div>
+				{{ if .Params.description }}
+				<div class="project_description">
+					<p>{{ .Params.description }}</p>
+				</div>
+				{{ end }}
+				{{ if .Params.project_category }}
+				<div class="project_category">
+					<span>{{ .Params.project_category }}</span>
+				</div>
+				{{ end }}
+				{{ if .Params.project_date }}
+				<div class="project_date">
+					<span>{{ .Params.project_date }}</span>
+				</div>
+				{{ end }}
+				{{ if .Params.project_link }}
+				<div class="project_link">
+					<a href="{{ .Params.project_link }}" target="_blank">View Project</a>
+				</div>
+				{{ end }}
+			</div>
+		</div>
+	</a>
+	{{ end }}
+{{ end }}
+</div>

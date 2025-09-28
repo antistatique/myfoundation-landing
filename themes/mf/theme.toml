@@ -1,0 +1,11 @@
+name = "mf"
+license = "MIT"
+licenselink = ".../blob/master/LICENSE"
+description = "From blank Starter https://github.com/vimux/blank/ Hugo theme for developers. "
+homepage = "https://github.com/zufrieden"
+min_version = "0.150"
+
+[author]
+  name = "zufrieden"
+  homepage = "https://github.com/zufrieden"
+

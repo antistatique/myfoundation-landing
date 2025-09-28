@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Foundation - Support a new project every month with a recurring donation.</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My Foundation - Support a new project every month with a recurring donation.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Dec 2023 16:10:03 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Styleguide</title>
+      <link>http://localhost:1313/styleguide/</link>
+      <pubDate>Fri, 01 Dec 2023 16:10:03 +0100</pubDate>
+      <guid>http://localhost:1313/styleguide/</guid>
+      <description>&lt;h5 id=&#34;colors&#34;&gt;Colors&lt;/h5&gt;&#xA;&lt;div class=&#34;color-points&#34;&gt;&#xA;&#x9;&lt;div class=&#34;color_wine point&#34; style=&#34;width: 3%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_red point&#34; style=&#34;width: 2%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_orange point&#34; style=&#34;width: 4%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_yellow point&#34; style=&#34;width: 6%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_gold point&#34; style=&#34;width: 25%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_granny point&#34; style=&#34;width: 4%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_greeny point&#34; style=&#34;width: 1%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_green point&#34; style=&#34;width: 3%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_golf point&#34; style=&#34;width: 2%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_kaki point&#34; style=&#34;width: 3%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_fall point&#34; style=&#34;width: 10%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_desert point&#34; style=&#34;width: 5%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_dust point&#34; style=&#34;width: 20%&#34;&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;color_white point&#34; style=&#34;width: 20%&#34;&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h5 id=&#34;buttons&#34;&gt;Buttons&lt;/h5&gt;&#xA;&lt;div&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#&#34;   class=&#34;button&#34;&gt;Prendre un rendez-vous&lt;/a&gt;&#xA;&lt;a href=&#34;#&#34;   class=&#34;button&#34;&gt;En savoir plus&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;h5 id=&#34;links&#34;&gt;links&lt;/h5&gt;&#xA;&lt;p&gt;The ship landed in a &lt;a href=&#34;#22&#34;&gt;medley of noises&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h5 id=&#34;typography&#34;&gt;Typography&lt;/h5&gt;&#xA;&lt;p&gt;The ship landed in a medley of noises. There was the far-off hiss of the atmosphere cutting and sliding past the metal of the ship. There was the steady drone of the conditioners fighting the heat of friction, and the slower rumble of the engines enforcing deceleration. There was the human sound of men and women gathering in the debarkation rooms and the grind of the hoists lifting baggage, mail, and freight to the long axis of the ship, from which they would be later moved along to the unloading platform.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

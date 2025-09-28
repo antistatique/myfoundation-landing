@@ -1,0 +1,15 @@
+<header>
+	<a href="{{ .Site.BaseURL }}" id="logo">
+		{{ partial "logo.html" . }}
+	</a>
+	<nav class="a11y-navigation" aria-label="Accessibility navigation">
+		<ul>
+			<li>
+				<a class="sr-only sr-show-on-focus" accesskey="2" href="#main" title="[Alt+2] Go to page content">Go to content</a>
+			</li>
+		</ul>
+	</nav>
+	<nav>
+		<a href="#support" class="button">{{ .Site.Params.supportButtonText }}</a>
+	</nav>
+</header>

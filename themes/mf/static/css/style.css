@@ -1,0 +1,278 @@
+/* Fonts */
+@font-face {
+  font-family: 'fk';
+  src: url('./fonts/FKRomanStandard-Regular.woff2') format('woff2'),
+       url('../fonts/FKRomanStandard-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Mallory';
+  src: url('../fonts/Mallory-Book.woff2') format('woff2'),
+       url('../fonts/Mallory-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Mallory';
+  src: url('../fonts/Mallory-Bold.woff2') format('woff2'),
+       url('../fonts/Mallory-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Malloryc';
+  src: url('../fonts/MalloryCond-Black.woff2') format('woff2'),
+       url('../fonts/MalloryCond-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: fallback;
+}
+
+:root {
+  /* Base */
+  --color_white: #ffffff;
+  --color_black: #706D6C;
+  --color_grey: #21201E;
+  --color_sand: #f7f1ed;
+
+  /* Garnet */
+  --color_dark_garnet: #401C30;
+  --color_dark_garnet_half: #60323d;
+  --color_salmon: #ee8377;
+
+  /* Green */
+  --color_dark_green: #19471F;
+  --color_green: #A3D052;
+
+  /* Blue */
+  --color_dark_blue: #202048;
+  --color_blue: #72A5FD;
+
+  /* Fonts */
+  --font_serif: 'fk', 'Times New Roman', Georgia, serif;
+  --font_sans_serif: 'Malloryc', -apple-system, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  
+  /* Config */
+  --external-gutter: 2vw;
+}
+
+/* Dark mode colors */
+ 
+@media (prefers-color-scheme: dark) {
+  /* :root {
+      --color_white: #706D6C;
+      --color_black: #ffffff;
+      --color_grey: #f7f1ed;
+      --color_sand: #21201E;
+    } */
+} 
+
+
+/* A11Y */
+.a11y-navigation{
+  position: fixed;
+  z-index: 100;
+  top: 1em;
+  left: 1em;
+}
+.a11y-navigation ul li{
+  list-style: none;
+}
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.sr-show-on-focus:focus{
+  z-index: 20;
+  width: auto;
+  min-width: 10em;
+  height: auto;
+  clip: auto;
+  background-color: #000;
+  padding: 0.4em 1em;
+  color: #fff;
+}
+
+
+@media (scripting: enabled) {
+  [loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+}
+
+/* Prevent animation library to hide data for javascript disabled https://github.com/michalsnik/aos/issues/541 */
+html.no-js [data-aos] {
+  opacity: 1;
+  transform: none;
+}
+
+
+html{
+  font-size: 90%;
+  scroll-behavior: smooth;
+}
+body{
+  scroll-behavior: smooth;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--font_serif);
+  font-size: calc(0.9em + 0.5vw);
+  font-size: clamp(0.9em,calc(0.9em + 1vw),20px);
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+a{
+  color: ;
+  text-decoration-skip-ink: auto;
+  text-decoration: currentcolor underline;
+  text-underline-offset: 3px;
+}
+a:hover{
+  color: ;
+}
+
+a.button{
+  background-color: var(--color_salmon);
+  color: var(--color_dark_garnet) ;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a.button:hover{
+  background-color: ;
+  color: ;
+}
+
+
+
+
+/* Typography */
+h1, h2, h3, h4, h5{
+  word-wrap: break-word;
+  font-family: var(--font_sans_serif);
+  text-transform: uppercase;
+}
+h1, .h1, .h-huge {
+  font-size: -webkit-calc(200% + 4vw);
+  font-size: clamp(1.3em,calc(1.8em + 2vw),70px);
+  line-height: 1.1em;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h2, .h2 {
+  font-size: calc(1.2em + 1vw);
+  font-size: clamp(1.3em,calc(1.2em + 1vw),30px);
+  font-weight: 600;
+  line-height: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+.lead{
+  font-size: calc(1.2em + 1vw);
+  font-size: clamp(1.6em,calc(1.2em + 1vw),30px);
+  line-height: 1.3em;
+  font-weight: 600;
+}
+
+
+.center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+blockquote{
+  font-size:130%;
+}
+
+p, ul, ol, pre, table, blockquote {
+  line-height: 1.56em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+ul, ol{
+  margin-left: 1.4em;
+  padding-left: 0em;
+  margin-bottom: 1em;
+}
+ul li, ol li{
+  margin-bottom: 0.3em;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0.3em;
+  margin-bottom: 0px;
+}
+
+input, textarea, keygen, select, button{
+  font-size: 100%;
+}
+
+mark{
+  /* background-color: var(--sable); */
+}
+
+
+/* HEADER */
+header{
+  background-color: var(--color_dark_garnet);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--external-gutter);
+}
+/* LOGO */
+#logo{
+  width: 12vmax;
+  max-width: 150px;
+  aspect-ratio: 13 / 4;
+}
+
+/* HERO */
+.hero{
+  background-color: var(--color_dark_garnet);
+  color: var(--color_white);
+  padding: var(--external-gutter);
+}
+.hero em{
+  color: var(--color_salmon);
+  font-style: normal;
+}
+
+/* WHY */
+.why{
+  background-color: var(--color_sand);
+}
+
+/* Utilities */
+.hide-mobile{
+  display: none;
+}
+@media (min-width: 60em) {
+  .hide-mobile{
+    display: block;
+  }
+}
+
+
+
+

@@ -1,0 +1,68 @@
+content:
+  - name: pages
+    label: Pages
+    type: collection
+    path: 'content'
+    view:
+      fields: [ title, draft ]
+    fields:
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+      - name: date
+        label: Date
+        type: date
+        options:
+          time: true
+          format: dd-MM-yyyy HH:mm
+  - name: projects
+    label: Projects
+    type: collection
+    path: 'content/projects'
+    view:
+      fields: [ title, project_category, project_date, draft ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+        options:
+          time: true
+          format: dd-MM-yyyy HH:mm
+      - name: description
+        label: Description
+        type: text
+      - name: project_logo
+        label: Project Logo
+        type: image
+      - name: project_link
+        label: Project Link
+        type: string
+      - name: project_category
+        label: Project Category
+        type: select
+        options:
+          creatable: true
+          multiple: false
+          values: [ child, health, water, virus ]
+      - name: project_date
+        label: Project Date
+        type: date
+        options:
+          format: yyyy-MM
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+      - name: body
+        label: Body
+        type: rich-text			

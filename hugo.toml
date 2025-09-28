@@ -1,0 +1,13 @@
+baseURL = 'https://myfoundation.ch'
+languageCode = 'en-us'
+title = 'My Foundation - Support a new project every month with a recurring donation.'
+theme = 'mf'
+
+[params]
+  supportButtonText = "Support the project"
+
+
+[markup]
+  [markup.goldmark]
+  [markup.goldmark.renderer]
+    unsafe = true

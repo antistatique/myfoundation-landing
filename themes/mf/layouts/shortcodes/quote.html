@@ -1,0 +1,14 @@
+{{ $author := .Get "author" }}
+{{ $title := .Get "title" }}
+
+<section class="quote">
+  {{ .Inner | markdownify }}
+  {{ if $author }}
+  <cite>
+    {{ if $title }}
+    <span class="quote-title">{{ $title }}</span>
+    {{ end }}
+    <span class="quote-author">{{ $author }}</span>
+  </cite>
+  {{ end }}
+</section>

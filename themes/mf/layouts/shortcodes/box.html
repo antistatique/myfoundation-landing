@@ -1,0 +1,12 @@
+{{ $icon := .Get "icon" }}
+
+<div class="box">
+  {{ if $icon }}
+  <div class="box-icon">
+    <span class="icon-{{ $icon }}"></span>
+  </div>
+  {{ end }}
+  <div class="box-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

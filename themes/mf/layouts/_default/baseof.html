@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ .Title }}</title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	<link rel="author" href="{{ "humans.txt" | relURL }}" />
+	<link rel="manifest" href="/manifest.json">
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}?{{ time.Now }}">
+	<link href="{{ "css/aos.css" | relURL }}" rel="stylesheet">
+
+	<script>
+		document.documentElement.className = document.documentElement.className.replace("no-js","js");
+	</script>
+	
+	<script defer data-domain="myfoundation.ch" src="https://plausible.io/js/script.js"></script>
+	<script>
+		// Register our service-worker
+		// if (navigator.serviceWorker) {
+		// 	window.addEventListener('load', function() {
+		// 		navigator.serviceWorker.register('/sw.js', {
+		// 			scope: '/'
+		// 		});
+		// 		if (navigator.serviceWorker.controller) {
+		// 			navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
+		// 		}
+		// 	});
+		// }
+	</script>  
+</head>
+<body>
+
+		{{ block "main" . }}{{ end }}
+		
+		<script src="{{ "/js/aos.js" | relURL }}"></script>	
+		<script>
+			  AOS.init();
+			  
+			  document.querySelectorAll('[loading="lazy"]').forEach(element => {
+				const animateIn = () => {
+				  element.style.opacity = 1;
+				};
+			  
+				if (element.complete) {
+				  animateIn();
+				} else {
+				  element.addEventListener('load', animateIn);
+				}
+			  });
+		</script>
+		
+</body>
+</html>
