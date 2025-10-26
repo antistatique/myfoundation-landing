@@ -5,6 +5,78 @@ theme = 'mf'
 
 [params]
   supportButtonText = "Support the project"
+  supportTitle = "How to support us"
+  supportSubTitle = "Have an impact right now."
+  projectsListTitle = "The projects we support"
+  projectsListSubTitle = "A new project every month."
+
+[params.footer]
+  creditsText = "Réalisé par"
+  creditsLink = "https://antistatique.net"
+  creditsLinkText = "Antistatique"
+
+[params.footer.newsletter]
+  icon = "email"
+  title = "Stay informed"
+  description = "Leave us your email and be the first to know when we launch the platform."
+  emailPlaceholder = "E-mail"
+  buttonText = "Sign up"
+  buttonClass = "green"
+  formAction = ""
+
+[params.footer.support]
+  icon = "support"
+  title = "Support us"
+  description = "Support the platform to launch the project."
+  buttonText = "Support the project"
+  buttonClass = "red"
+  buttonLink = "#support"
+
+[params.footer.social]
+  title = "Follow us"
+
+[[params.footer.social.links]]
+  name = "Instagram"
+  url = "https://www.instagram.com/myfoundation/"
+  icon = "instagram"
+
+[[params.footer.social.links]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/company/myfoundation/"
+  icon = "linkedin"
+
+[[params.supportOptions]]
+  title = "The Bedrock"
+  subtitle = "The community powering the platform"
+  icon = "blocs"
+  class = "bedrock"
+  description = "Special group of committed donors who fund the core operations of our platform. They cover platform development, maintenance and communication costs, so that 100% of the funds raised by the platform go directly to the projects."
+  footer = "Change needs a foundation."
+  buttonText = "Join the Bedrock"
+  buttonLink = "#"
+  buttonClass = "red"
+
+[[params.supportOptions]]
+  title = "The Builders"
+  subtitle = "The community behind change"
+  icon = "tools"
+  class = "builders"
+  description = "The Builders are the donors building lasting change, one act of generosity at a time. Their monthly support means sustainable funding for the charitable projects that transform lives. Each contribution fuels real, visible change – clean water, emergency aid, education, actions towards the environment. The Builders don't just believe in a better world. They are building it."
+  footer = "Give monthly. Fuel momentum."
+  buttonText = "Join the Builders"
+  buttonLink = "#"
+  buttonClass = "green"
+
+[[params.supportOptions]]
+  title = "The Sponsors"
+  subtitle = "Our partners for change"
+  icon = "handshake"
+  class = "sponsors"
+  description = "Our sponsors are mission-driven companies stepping-up publicly to support causes that matter. Their visible commitment amplifies the reach and impact of every project we champion. By aligning their brand with real change, sponsors build trust and lead the way towards a better future."
+  footer = "Partner for change. Amplify impact."
+  buttonText = "Become a Sponsor"
+  buttonLink = "#"
+  buttonClass = "blue"
 
 
 [markup]

@@ -1,0 +1,33 @@
+<section class="support" id="support">
+<hgroup>	
+	<h2>{{ .Site.Params.supportTitle }}</h2>
+	<h3>{{ .Site.Params.supportSubTitle }}</h3>
+</hgroup>
+
+<div class="choose">
+	{{ range .Site.Params.supportOptions }}
+	<article class="{{ .class }}">
+		<header>
+		{{ partial "svg" .icon }}
+		<h4>{{ .title }}</h4>
+		<h5>{{ .subtitle }}</h5>
+		</header>
+		<div>
+		<p>{{ .description }}</p>
+		</div>
+		<footer>
+			<p>{{ .footer }}</p>
+			<a href="{{ .buttonLink }}" class="button {{ .buttonClass }}">{{ .buttonText }}</a>
+		</footer>
+	</article>
+	{{ end }}
+</div>
+
+<div class="footer">	
+	<p>They already support us</p>
+	<div>
+		
+	</div>
+</div>
+
+</section>

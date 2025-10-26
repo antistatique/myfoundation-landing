@@ -1,8 +1,45 @@
+<footer class="footer">
+	<section class="contact">
+		<article class="newsletter">
+			{{ partial "svg" .Site.Params.footer.newsletter.icon }}
+			<h3>{{ .Site.Params.footer.newsletter.title }}</h3>
+			<p>
+				{{ .Site.Params.footer.newsletter.description }}
+			</p>
+			<form action="{{ .Site.Params.footer.newsletter.formAction }}">
+				<input type="email" placeholder="{{ .Site.Params.footer.newsletter.emailPlaceholder }}">
+				<input type="submit" value="{{ .Site.Params.footer.newsletter.buttonText }}" class="button {{ .Site.Params.footer.newsletter.buttonClass }}">
+			</form>
 
-{{/*
-<footer>
-	<p>
-		{{ .Site.Title }}
-	</p>
+		</article>
+		<article class="supportus">
+			{{ partial "svg" .Site.Params.footer.support.icon }}
+			<h3>{{ .Site.Params.footer.support.title }}</h3>
+			<p>
+				{{ .Site.Params.footer.support.description }}
+			</p>
+			<a href="{{ .Site.Params.footer.support.buttonLink }}" class="button {{ .Site.Params.footer.support.buttonClass }}">{{ .Site.Params.footer.support.buttonText }}</a>
+		</article>
+		<article class="social">
+			<h3>{{ .Site.Params.footer.social.title }}</h3>
+			<div class="social-logo">
+			{{ range .Site.Params.footer.social.links }}
+			<a href="{{ .url }}" title="{{ .name }}">{{ partial "svg" .icon }}</a>
+			{{ end }}
+			</div>
+		</article>
+	</section>
+
+	<section class="credits">
+		<a href="{{ .Site.BaseURL }}" id="logo">
+			{{ partial "logo.html" . }}
+		</a>
+		<div class="space-between">
+		<p>
+			{{ .Site.Title }}
+		</p>
+
+		<p class="right">{{ .Site.Params.footer.creditsText }} <a href="{{ .Site.Params.footer.creditsLink }}">{{ .Site.Params.footer.creditsLinkText }}</a></p>
+		</div>
+	</section>
 </footer>
-*/}}

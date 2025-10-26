@@ -5,10 +5,10 @@
   {{ .Inner | markdownify }}
   {{ if $author }}
   <cite>
+    <span class="quote-author">{{ $author }}</span>
     {{ if $title }}
     <span class="quote-title">{{ $title }}</span>
     {{ end }}
-    <span class="quote-author">{{ $author }}</span>
   </cite>
   {{ end }}
 </section>

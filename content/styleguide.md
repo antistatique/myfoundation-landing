@@ -32,7 +32,31 @@ date = 2023-12-01T16:10:03+01:00
 	
 </div>
 
+##### Icons
 
+  {{<icon icon="trees" >}}
+  {{<icon icon="child" >}}
+  {{<icon icon="bike" >}}
+  {{<icon icon="virus" >}}
+  {{<icon icon="bees" >}}
+  {{<icon icon="child" >}}
+  {{<icon icon="heart" >}}
+  {{<icon icon="water" >}}
+  {{<icon icon="boat" >}}
+  {{<icon icon="hands" >}}
+
+<hr/>
+  {{<icon icon="handshake" >}}
+  {{<icon icon="blocs" >}}
+  {{<icon icon="tools" >}}
+<hr/>
+  {{<icon icon="support" >}}
+  {{<icon icon="email" >}}
+  {{<icon icon="target" >}}
+  {{<icon icon="flag" >}}
+<hr/>
+  {{<icon icon="instagram" >}}
+  {{<icon icon="linkedin" >}}
 
 #####  links
 

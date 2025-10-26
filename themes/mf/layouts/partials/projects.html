@@ -1,4 +1,9 @@
-<div class="project_list">
+<section class="project_list">
+<hgroup>	
+<h2>{{ .Site.Params.projectsListTitle }}</h2>
+<h3>{{ .Site.Params.projectsListSubTitle }}</h3>
+</hgroup>
+
 {{ range .Site.Sections }}
 	{{ range first 12 (.Data.Pages.ByDate.Reverse) }}
 	<a href="{{.Permalink}}">
@@ -37,4 +42,4 @@
 	</a>
 	{{ end }}
 {{ end }}
-</div>
+</section>

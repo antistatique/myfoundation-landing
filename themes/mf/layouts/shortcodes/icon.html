@@ -1,0 +1,4 @@
+{{ $icon := .Get "icon" }}
+{{ if $icon }}
+  {{ partial "svg" $icon }}
+{{ end }}

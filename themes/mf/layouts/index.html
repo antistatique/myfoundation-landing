@@ -1,9 +1,9 @@
 {{ define "main" }}
+<div class="container">
 {{ partial "header.html" . }}  
-<main>
 {{.Content}}
-</main>
 {{ partial "support.html" . }}
 {{ partial "projects.html" . }}
 {{ partial "footer.html" . }}  
+</div>
 {{ end }}
