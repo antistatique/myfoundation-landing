@@ -7,7 +7,7 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	<link rel="author" href="{{ "humans.txt" | relURL }}" />
-	<link rel="manifest" href="/manifest.json">
+	<link rel="manifest" href="{{ "manifest.json" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}?{{ time.Now }}">
 	<link href="{{ "css/aos.css" | relURL }}" rel="stylesheet">
 

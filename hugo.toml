@@ -1,4 +1,4 @@
-baseURL = 'https://myfoundation.ch'
+baseURL = 'https://antistatique.github.io/myfoundation-landing'
 languageCode = 'en-us'
 title = 'My Foundation - Support a new project every month with a recurring donation.'
 theme = 'mf'
