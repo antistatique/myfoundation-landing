@@ -6,7 +6,7 @@ theme = 'mf'
 [params]
   supportButtonText = "Support the project"
   supportTitle = "How to support us"
-  supportSubTitle = "Have an impact right now."
+  supportSubTitle = "Have an impact <em>right now.</em>"
   projectsListTitle = "The projects we support"
   projectsListSubTitle = "A new project every month."
 

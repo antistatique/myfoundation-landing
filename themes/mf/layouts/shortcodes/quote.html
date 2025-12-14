@@ -2,13 +2,18 @@
 {{ $title := .Get "title" }}
 
 <section class="quote">
-  {{ .Inner | markdownify }}
-  {{ if $author }}
-  <cite>
-    <span class="quote-author">{{ $author }}</span>
-    {{ if $title }}
-    <span class="quote-title">{{ $title }}</span>
+  <img src="/images/quote.png" alt="Project founders" loading="lazy" data-aos="fade-right" data-aos-duration="400">
+  <div>
+    <div data-aos="fade" data-aos-duration="400">
+    {{ .Inner | markdownify }}
+    </div>
+    {{ if $author }}
+    <cite data-aos="fade-down" data-aos-duration="400">
+      <span class="quote-author">{{ $author }}</span>
+      {{ if $title }}
+      <span class="quote-title">{{ $title }}</span>
+      {{ end }}
+    </cite>
     {{ end }}
-  </cite>
-  {{ end }}
+  </div>
 </section>

@@ -1,5 +1,5 @@
 <header class="header">
-	<a href="{{ .Site.BaseURL }}" id="logo">
+	<a href="{{ .Site.BaseURL }}" id="logo" data-aos="fade-right" data-aos-duration="300">
 		{{ partial "logo.html" . }}
 	</a>
 	<nav class="a11y-navigation" aria-label="Accessibility navigation">
@@ -9,7 +9,7 @@
 			</li>
 		</ul>
 	</nav>
-	<nav>
+	<nav data-aos="fade-left" data-aos-duration="300">
 		<a href="#support" class="button">{{ .Site.Params.supportButtonText }}</a>
 	</nav>
 </header>

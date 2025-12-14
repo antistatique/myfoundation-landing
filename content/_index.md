@@ -2,10 +2,10 @@
 title: My Foundation - Support a new project every month with a recurring donation.
 ---
 
-{{< hero show-project-logo="true" projects-title="Projects we support" >}}
+{{< hero show-project-logo="false" projects-title="Projects we support" >}}
 
 # Support a new project<br/>every month with<br/><em>a recurring donation.</em>
-## Web make a difference <em>together.</em>
+### Web make a difference <em>together.</em>
 
 {{< /hero >}}
 

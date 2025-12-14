@@ -1,6 +1,6 @@
 <footer class="footer">
 	<section class="contact">
-		<article class="newsletter">
+		<article class="newsletter" data-aos="fade-up" data-aos-duration="400">
 			{{ partial "svg" .Site.Params.footer.newsletter.icon }}
 			<h3>{{ .Site.Params.footer.newsletter.title }}</h3>
 			<p>
@@ -12,7 +12,7 @@
 			</form>
 
 		</article>
-		<article class="supportus">
+		<article class="supportus" data-aos="fade-up" data-aos-duration="600">
 			{{ partial "svg" .Site.Params.footer.support.icon }}
 			<h3>{{ .Site.Params.footer.support.title }}</h3>
 			<p>
@@ -20,7 +20,7 @@
 			</p>
 			<a href="{{ .Site.Params.footer.support.buttonLink }}" class="button {{ .Site.Params.footer.support.buttonClass }}">{{ .Site.Params.footer.support.buttonText }}</a>
 		</article>
-		<article class="social">
+		<article class="social" data-aos="fade-up" data-aos-duration="800">
 			<h3>{{ .Site.Params.footer.social.title }}</h3>
 			<div class="social-logo">
 			{{ range .Site.Params.footer.social.links }}
@@ -31,7 +31,7 @@
 	</section>
 
 	<section class="credits">
-		<a href="{{ .Site.BaseURL }}" id="logo">
+		<a href="{{ .Site.BaseURL }}" id="logo" data-aos="fade-up" data-aos-duration="400">
 			{{ partial "logo.html" . }}
 		</a>
 		<div class="space-between">

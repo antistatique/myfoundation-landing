@@ -1,16 +1,16 @@
 <section class="support" id="support">
 <hgroup>	
-	<h2>{{ .Site.Params.supportTitle }}</h2>
-	<h3>{{ .Site.Params.supportSubTitle }}</h3>
+	<h2 data-aos="fade-up" data-aos-duration="400">{{ .Site.Params.supportTitle }}</h2>
+	<h3 data-aos="fade-up" data-aos-duration="500">{{ .Site.Params.supportSubTitle | safeHTML }}</h3>
 </hgroup>
 
 <div class="choose">
 	{{ range .Site.Params.supportOptions }}
-	<article class="{{ .class }}">
+	<article class="{{ .class }}" data-aos="fade-up" data-aos-duration="400">
 		<header>
 		{{ partial "svg" .icon }}
-		<h4>{{ .title }}</h4>
-		<h5>{{ .subtitle }}</h5>
+		<h4 class="h2">{{ .title }}</h4>
+		<h5 class="h3">{{ .subtitle }}</h5>
 		</header>
 		<div>
 		<p>{{ .description }}</p>
@@ -23,7 +23,8 @@
 	{{ end }}
 </div>
 
-<div class="footer">	
+<div class="footer" data-aos="fade-up" data-aos-duration="400">	
+	<hr class="white">
 	<p>They already support us</p>
 	<div>
 		
